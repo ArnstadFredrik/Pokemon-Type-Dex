@@ -1,0 +1,99 @@
+//main: ../main.sass
+
+body
+  font-family: $font
+  font-size: $fontSize
+  color: $fontColor
+  display: grid
+  justify-items: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+  margin: 0
+  //grid-template-rows: 50px 300px 75px 300px
+  grid-template-rows: auto
+
+p
+  font-size: $fontSize
+  color: $fontColor
+
+@for $i from 1 through 5
+  .c#{$i}
+    grid-template-columns: repeat($i,1fr)
+
+  .r#{$i}
+    grid-template-rows: repeat($i,1fr)
+
+.grid
+  display: grid
+  grid-gap: 20px
+
+.padding
+  padding: 20px
+  box-sizing: border-box
+
+.center-self
+  justify-self: center
+  align-self: center
+
+.hide
+  display: none
+
+.btn
+  padding: 20px
+
+.type
+  padding: 10px
+  border-radius: 5px
+  width: 100%
+  box-sizing: border-box
+  text-transform: uppercase
+  text-align: center
+
+.weak,
+.effective,
+.noDamage
+  grid-template-rows: 40px
+  p
+    margin: 0px
+
+.normal
+  background: #e3cec3
+.fire
+  background: #d94214
+.water
+  background: #1277c9
+  color: white
+.electric
+  background: #e6d435
+.grass
+  background: #42ad21
+.ice
+  background: #5acedb
+.fighting
+  background: #c96b30
+.poison
+  background: #9426bf
+  color: white
+.ground
+  background: #d1ba84
+.flying
+  background: #8fb7c4
+.psychic
+  background: #cc8bbf
+.bug
+  background: #9cc280
+.rock
+  background: #9c7b5c
+.ghost
+  background: #8e739c
+.dragon
+  background: #634899
+  color: white
+.dark
+  background: #544b48
+  color: white
+.steel
+  background: #b0b0b0
+.fairy
+  background: #ebc9f0
