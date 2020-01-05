@@ -1,8 +1,9 @@
-const v = '0.0.2';
+const v = '0.0.3';
 const cacheArray = [
   './assets/css/main.css',
   './sw.js',
   './assets/css/script.js',
+  './index.html'
 
 ];
 self.addEventListener('install', async event => {
