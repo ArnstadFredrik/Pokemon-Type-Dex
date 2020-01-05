@@ -174,5 +174,17 @@ let pokemon = {
   }
 }
 
+// Service workere
+window.addEventListener('load', e => {
+  if('serviceWorker' in window.navigator) {
+    try {
+      navigator.serviceWorker.register('sw.js');
+      console.log('sw reg sucsess');
+    } catch (e) {
+      console.log('sw reg failed');
+    }
+  };
+});
+
 pokemon.createOverview()
 pokemon.createButtons()
