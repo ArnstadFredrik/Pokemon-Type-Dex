@@ -1,5 +1,12 @@
 {
- "name": "TypeDex",
+ "name": "Pokemon Typedex",
+ "short_name": "TypeDex",
+ "background_color": "#ffffff",
+ "display": "standalone",
+ "orientation": "portrait",
+ "Scope": "/",
+ "start_url": ".",
+
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
